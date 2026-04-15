@@ -10,7 +10,10 @@
 <body>
   <header class="site-header">
     <nav class="site-nav">
-      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+      <a href="{{ '/' | relative_url }}" class="site-title">
+        <img src="{{ '/assets/images/Judah_PBJ_Logo.svg' | relative_url }}" alt="" class="nav-logo">
+        {{ site.title }}
+      </a>
       <ul class="nav-links">
         <li><a href="{{ '/hexominos/' | relative_url }}">Hexominos</a></li>
       </ul>
