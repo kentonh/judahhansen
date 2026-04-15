@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Judah Hansen || Repurposed Robot Lamps</title>
+  
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+	
+	<script type="text/javascript" src="http://gobananago.com/skeleton/js/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="http://gobananago.com/skeleton/js/form.js"></script>
+	
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- container -->
+	<div class="container">
+
+		<div class="row">
+			<div class="twelve columns">
+				<h2>Judah Hansen</h2>
+				<p>Age: 
+				
+22 years, 6 months, 2 days
+  | Occupation: Student, Part-Time Robot Builder</p>
+				<hr />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="eight columns">
+				<dl class="tabs">
+					<dd><a href="#simple1" class="active">Recent Builds</a></dd>
+					<dd><a href="#simple2">Where to Buy</a></dd>
+					<dd><a href="#simple3">About Judah</a></dd>
+				</dl>
+
+				<ul class="tabs-content">
+					<li class="active" id="simple1Tab">
+					<div id="xfeatured"> 
+     <img src="images/goose.jpg" alt="" />
+     <img src="images/photo4.jpg"  alt="" />
+     <img src="images/photo5.jpg" alt="" />
+</div></li>
+					<li id="simple2Tab"><a href="http://www.etsy.com/shop/judahhansen"><img src="images/etsy.jpg"></a> <a href="http://maps.google.com/maps?gcx=w&ix=c2&q=the+onion+tree&um=1&ie=UTF-8&hl=en&sa=N&tab=wl"><h2>The Onion Tree</h2></a></li>
+					<li id="simple3Tab">Judah loves to build. One year for Christmas he got a box full of paper towel tubes, tape and stickers. He was thrilled. </li>
+				</ul>
+			</div>
+
+			<div class="four columns">
+				<div id="contactForm" class="contactForm">
+					<form action="php/submit-form.php" method="post">
+						<ul>
+							<li>If you would like to be kept up to date, please use this form to add your self to our contact list.
+							</li>
+							<li>
+								<label for="name">Name *</label>
+								<input type="text" name="name" id="name" class="txtFld" />
+								<span id="errorName" class="formError"></span>
+							</li>
+							<li>
+								<label for="email">Email Address*</label>
+								<input type="text" name="email" id="email" class="txtFld" />
+								<span id="errorEmail" class="formError"></span>
+							</li>
+							
+								<input type="hidden" name="subject" id="subject" class="txtFld" value="Website Update Request"/>
+							
+								<input type="hidden" name="message" id="message" value="Please add this email address to your list of people to keep up to date."/>
+				
+							<li>
+								<input type="submit" value="Send" class="small blue button" id="submit" />
+								<span id="formProgress" class="formProgress"></span>
+							</li>
+						</ul>
+					</form>
+					</div>
+					<img src="images/madsci.jpg">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- container -->
+
+
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script type="text/javascript">
+	     $(window).load(function() {
+	         $('#featured').orbit();
+	     });
+	</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6152770-56']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
