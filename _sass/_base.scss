@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navy: #060040;
+  --white: #ffffff;
+  --light-gray: #f5f5f7;
+  --mid-gray: #86868b;
+  --text: #1d1d1f;
+  --max-width: 1100px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background: var(--white);
+}
+
+a {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+// Site header
+.site-header {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.site-nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+
+  a {
+    font-size: 0.9375rem;
+    color: var(--mid-gray);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--text);
+    }
+  }
+}
+
+// Site content
+.site-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+// Site footer
+.site-footer {
+  border-top: 1px solid var(--light-gray);
+  padding: 2rem;
+  text-align: center;
+  color: var(--mid-gray);
+  font-size: 0.875rem;
+}
+
+// Portfolio home
+.hero {
+  padding: 6rem 0 4rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: var(--mid-gray);
+    max-width: 540px;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.project-card {
+  border: 1px solid var(--light-gray);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: var(--mid-gray);
+    font-size: 0.9375rem;
+  }
+}

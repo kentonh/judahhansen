@@ -1,0 +1,26 @@
+title: Judah Hansen
+description: Design Portfolio
+baseurl: ""
+url: ""
+
+markdown: kramdown
+
+collections:
+  hexominos_rulesets:
+    output: true
+    permalink: /hexominos/rulesets/:name/
+
+defaults:
+  - scope:
+      path: "hexominos"
+    values:
+      layout: hexominos
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

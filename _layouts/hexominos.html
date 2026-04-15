@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}Hexominos — {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% seo %}
+</head>
+<body class="hexominos-page">
+  <header class="hexominos-header">
+    <a href="{{ '/hexominos/' | relative_url }}" class="hexominos-wordmark-link">
+      {% include hexominos-wordmark.svg %}
+    </a>
+    <nav class="hexominos-nav">
+      <ul>
+        <li><a href="{{ '/hexominos/' | relative_url }}" {% if page.url == '/hexominos/' %}class="active"{% endif %}>Home</a></li>
+        <li><a href="{{ '/hexominos/about/' | relative_url }}" {% if page.url == '/hexominos/about/' %}class="active"{% endif %}>About</a></li>
+        <li><a href="{{ '/hexominos/files/' | relative_url }}" {% if page.url == '/hexominos/files/' %}class="active"{% endif %}>Files</a></li>
+        <li class="has-submenu">
+          <a href="{{ '/hexominos/rulesets/' | relative_url }}" {% if page.url contains '/rulesets/' %}class="active"{% endif %}>Rulesets</a>
+          <ul class="submenu">
+            <li><a href="{{ '/hexominos/rulesets/stacking/' | relative_url }}">Stacking</a></li>
+            <li><a href="{{ '/hexominos/rulesets/pattern/' | relative_url }}">Pattern</a></li>
+            <li><a href="{{ '/hexominos/rulesets/make-your-own-rules/' | relative_url }}">Make Your Own Rules</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hexominos-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; {{ 'now' | date: '%Y' }} Judah Hansen</p>
+  </footer>
+</body>
+</html>
