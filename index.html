@@ -3,17 +3,27 @@ layout: default
 title: Home
 ---
 
+<div class="hero-banner">
+  <img src="{{ '/assets/images/Blank-Cover-Portfolio-v16.jpg' | relative_url }}" alt="Portfolio cover">
+</div>
+
 <section class="hero">
-  <h1>Judah Hansen</h1>
-  <p>Designer crafting thoughtful games and interactive experiences.</p>
+  <div class="hero-intro">
+    <img src="{{ '/assets/images/Judah-Hansen-Headshot.png' | relative_url }}" alt="Judah Hansen" class="headshot">
+    <div>
+      <h1>Judah Hansen</h1>
+      <p>Designer crafting thoughtful games and interactive experiences.</p>
+    </div>
+  </div>
 </section>
 
-<section class="projects">
-  <a href="{{ '/hexominos/' | relative_url }}" class="project-card">
+<a href="{{ '/hexominos/' | relative_url }}" class="project-card project-featured">
+  <img src="{{ '/assets/images/IMG_2453.jpg' | relative_url }}" alt="Hexominos" class="project-featured-img">
+  <div class="project-featured-text">
     <h3>Hexominos</h3>
     <p>A hexagonal tile game with multiple rulesets and endless possibilities.</p>
-  </a>
-</section>
+  </div>
+</a>
 
 <section class="projects">
   <a href="{{ '/assets/Spincharge-Portfolio-Segment.pdf' | relative_url }}" class="project-card">
