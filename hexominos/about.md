@@ -19,6 +19,6 @@ With multiple game modes and endless opportunity to customize, Hexominos are fit
 
 </div>
 <div class="about-image">
-  <img src="/assets/images/IMG_2447.jpg" alt="Hexominos pieces">
+  <img src="{{ '/assets/images/IMG_2447.jpg' | relative_url }}" alt="Hexominos pieces">
 </div>
 </div>
