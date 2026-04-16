@@ -5,10 +5,15 @@ title: Hexominos
 
 <div class="hexominos-hero">
   <div class="hero-text">
+    <div class="hexominos-logo-container">
+      {% include hexominos-logo.svg %}
+    </div>
     <h1>Hexominos</h1>
     <p>A hexagonal tile game built around simple shapes and deep strategy. Explore rulesets, download files, and start playing.</p>
   </div>
-  <div class="hexominos-logo-container">
-    {% include hexominos-logo.svg %}
+  <div class="hexominos-video">
+    <video autoplay muted loop playsinline>
+      <source src="{{ '/assets/images/hexominos-play-video.mp4' | relative_url }}" type="video/mp4">
+    </video>
   </div>
 </div>
