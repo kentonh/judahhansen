@@ -67,6 +67,12 @@ a {
       color: var(--text);
     }
   }
+
+  .age-counter {
+    font-size: 0.9375rem;
+    color: var(--mid-gray);
+    font-variant-numeric: tabular-nums;
+  }
 }
 
 // Site content
