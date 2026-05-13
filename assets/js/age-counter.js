@@ -1,5 +1,5 @@
 (() => {
-  const els = document.querySelectorAll('.age-counter');
+  const els = document.querySelectorAll('.age-counter[data-since]');
   if (!els.length) return;
 
   const TZ = 'America/Chicago';

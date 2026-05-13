@@ -308,6 +308,16 @@ a {
   img {
     cursor: zoom-in;
   }
+
+  &.project-gallery-natural {
+    align-items: start;
+
+    img {
+      height: auto;
+      aspect-ratio: auto;
+      object-fit: contain;
+    }
+  }
 }
 
 .lightbox {
