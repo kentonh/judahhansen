@@ -72,6 +72,15 @@ a {
     font-size: 0.9375rem;
     color: var(--mid-gray);
     font-variant-numeric: tabular-nums;
+    display: inline-block;
+  }
+
+  .age-counter[data-since] {
+    min-width: 32em;
+
+    @media (max-width: 700px) {
+      min-width: 13em;
+    }
   }
 }
 
